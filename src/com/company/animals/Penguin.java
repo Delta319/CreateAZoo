@@ -1,9 +1,9 @@
 package com.company.animals;
 
 public class Penguin extends Animal {
-    String type;
-    String featherType;
-    double wingspan;
+   private String type;
+   private String featherType;
+   private double wingspan;
 
     public Penguin(String name, String location, char gender, double wight, String type, String featherType, double wingspan) {
         super(name, location, gender, wight);
