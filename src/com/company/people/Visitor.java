@@ -1,19 +1,19 @@
 package com.company.people;
 
-public class Visitors extends People{
-    double groupSize;
-    String allergies;
-    boolean membership;
-    String location;
+public class Visitor extends People{
+   private double groupSize;
+   private String allergies;
+   private boolean membership;
+   private String homeAddress;
 
-    public Visitors(double groupSize, boolean membership, String location) {
+    public Visitor(double age, String name, char gender, String race, double groupSize, boolean membership, String homeAddress) {
+        super(age, name, gender, race);
         this.groupSize = groupSize;
         this.membership = membership;
-        this.location = location;
+        this.homeAddress = homeAddress;
     }
 
     public double getGroupSize() {
-
         return groupSize;
     }
 
@@ -37,11 +37,11 @@ public class Visitors extends People{
         this.membership = membership;
     }
 
-    public String getLocation() {
-        return location;
+    public String getHomeAddress() {
+        return homeAddress;
     }
 
-    public void setLocation(String location) {
-        this.location = location;
+    public void setHomeAddress(String homeAddress) {
+        this.homeAddress = homeAddress;
     }
 }

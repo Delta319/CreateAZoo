@@ -1,10 +1,10 @@
 package com.company.people;
 
 public class People {
-    double age;
-    String name;
-    char gender;
-    String race;
+   private double age;
+   private String name;
+   private char gender;
+   private String race;
 
     public People(double age, String name, char gender, String race) {
         this.age = age;
@@ -14,7 +14,6 @@ public class People {
     }
 
     public double getAge() {
-
         return age;
     }
 
@@ -42,7 +41,4 @@ public class People {
         return race;
     }
 
-    public void setRace(String race) {
-        this.race = race;
-    }
 }

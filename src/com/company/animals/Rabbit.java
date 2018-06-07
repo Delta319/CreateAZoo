@@ -3,17 +3,15 @@ package com.company.animals;
 public class Rabbit extends Animal {
 
 
-    double earLength;
-    String furColor;
-    String favoriteFood;
+    private double earLength;
+    private String furColor;
+    private String favoriteFood;
 
-    public Rabbit(String name, String location, char gender, double weight, double earLength, String furColor) {
-        super(name, location, gender, weight);
+    public Rabbit(String name, String location, char gender, double wight, double earLength, String furColor) {
+        super(name, location, gender, wight);
         this.earLength = earLength;
         this.furColor = furColor;
-
     }
-
 
     public double getEarLength() {
         return earLength;

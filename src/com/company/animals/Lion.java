@@ -1,9 +1,9 @@
 package com.company.animals;
 
 public class Lion extends Animal {
-    double noseSize;
-    double maneLength;
-    boolean isTrained;
+   private double noseSize;
+   private double maneLength;
+   private boolean isTrained;
 
     public Lion(String name, String location, char gender, double wight, double maneLength, boolean isTrained) {
         super(name, location, gender, wight);

@@ -3,10 +3,13 @@ package com.company.animals;
 public class Penguin extends Animal {
     String type;
     String featherType;
-    Double wingspan;
+    double wingspan;
 
-    public Penguin(String name, String location, char gender, double wight) {
+    public Penguin(String name, String location, char gender, double wight, String type, String featherType, double wingspan) {
         super(name, location, gender, wight);
+        this.type = type;
+        this.featherType = featherType;
+        this.wingspan = wingspan;
     }
 
     public String getType() {
@@ -25,11 +28,11 @@ public class Penguin extends Animal {
         this.featherType = featherType;
     }
 
-    public Double getWingspan() {
+    public double getWingspan() {
         return wingspan;
     }
 
-    public void setWingspan(Double wingspan) {
+    public void setWingspan(double wingspan) {
         this.wingspan = wingspan;
     }
 }

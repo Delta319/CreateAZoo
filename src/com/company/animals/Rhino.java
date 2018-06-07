@@ -1,17 +1,16 @@
 package com.company.animals;
 
 public class Rhino extends Animal {
-    double hornSize;
-    String type;
-    Boolean isEndangered;
+   private double hornSize;
+   private String type;
+   private Boolean isEndangered;
 
     public Rhino(String name, String location, char gender, double wight, String type) {
         super(name, location, gender, wight);
         this.type = type;
     }
 
-
-    public Double getHornSize() {
+    public double getHornSize() {
         return hornSize;
     }
 
