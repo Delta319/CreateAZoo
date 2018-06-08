@@ -18,6 +18,8 @@ public class Menu {
             switch (input.nextInt()) {
                 case 1:
                     //Manage People
+                    PeopleMenu peopleMenu = new PeopleMenu();
+                    peopleMenu.managePeople();
                     managePeople();
                     break;
                 case 2:
@@ -46,6 +48,10 @@ public class Menu {
             mainMenu();
 
         }
+    }
+
+    private void manageInventory() {
+
     }
 
     //Handles Inventory Options

@@ -5,7 +5,8 @@ import java.util.Scanner;
 
 public class PeopleMenu {
     private Scanner input = new Scanner(System.in);
-    private void manageInventory() {
+
+    protected void manageInventory() {
         try {
 
 
@@ -23,12 +24,13 @@ public class PeopleMenu {
                     manageEmployee();
                     break;
                 case 2:
-
                     //Handle Visitor
+                    manageVisitor();
                     break;
                 case 3:
                     //Handle going back to mainMenu().
-                    mainMenu();
+                    Menu menu = new Menu();
+                    menu.mainMenu();
                     break;
                 case 4:
                     //Handle exiting the program.
@@ -48,6 +50,18 @@ public class PeopleMenu {
             managePeople();
 
         }
+
+    }
+
+    private void manageVisitor() {
+
+    }
+
+    private void manageEmployee() {
+
+    }
+
+    protected void managePeople() {
 
     }
 }
