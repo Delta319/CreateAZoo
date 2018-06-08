@@ -51,6 +51,30 @@ public class Menu {
     //Handles Inventory Options
     private void manageInventory() {
 
+        System.out.println("Are you" +
+                "\n1: an Employee" +
+                "\n2: a Visitor" +
+                "\n3: go back" +
+                "\n4: Exit program");
+
+        //Handles People managment options
+        switch (input.nextInt()) {
+            case 1:
+                //Handle Employee
+                break;
+            case 2:
+                //Handle Visitor
+                break;
+            case 3:
+                //Handle going back to main menu.
+                break;
+            case 4:
+                //Handle exiting the program.
+            default:
+                //Handle incorrect input.
+                break;
+
+        }
     }
 
     //Handles Animal Options
