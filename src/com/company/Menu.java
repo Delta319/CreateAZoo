@@ -12,7 +12,8 @@ public class Menu {
             System.out.println("Please choose an option. " +
                     "\n1. Manage People" +
                     "\n2. Manage Animals" +
-                    "\n3. Manage Inventory");
+                    "\n3. Manage Inventory" +
+                    "\n4. Quit Program");
 
             switch (input.nextInt()) {
                 case 1:
