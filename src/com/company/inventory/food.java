@@ -1,4 +1,4 @@
-package com.company.people.inventory;
+package com.company.inventory;
 
 public class food {
     private String category;

@@ -1,4 +1,4 @@
-package com.company;
+package com.company.menu;
 
 import java.util.InputMismatchException;
 import java.util.Random;
@@ -42,39 +42,17 @@ public class Menu {
         } catch (InputMismatchException ime) {
             //Handle if a user something that is not an int
             input.nextLine();
-            System.out.println("Than is not a valid entry. Please enter a number betweenn 1 and 4.");
+            System.out.println("That is not a valid entry. Please enter a number between 1 and 4.");
             mainMenu();
 
         }
     }
 
     //Handles Inventory Options
-    private void manageInventory() {
 
-        System.out.println("Are you" +
-                "\n1: an Employee" +
-                "\n2: a Visitor" +
-                "\n3: go back" +
-                "\n4: Exit program");
 
-        //Handles People managment options
-        switch (input.nextInt()) {
-            case 1:
-                //Handle Employee
-                break;
-            case 2:
-                //Handle Visitor
-                break;
-            case 3:
-                //Handle going back to main menu.
-                break;
-            case 4:
-                //Handle exiting the program.
-            default:
-                //Handle incorrect input.
-                break;
-
-        }
+    //Handles Employees
+    private void manageEmployee() {
     }
 
     //Handles Animal Options

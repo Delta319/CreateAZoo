@@ -1,4 +1,4 @@
-package com.company.people.inventory;
+package com.company.inventory;
 
 public class gifts {
     private String type;
