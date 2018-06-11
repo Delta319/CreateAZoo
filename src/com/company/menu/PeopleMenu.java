@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class PeopleMenu {
     private Scanner input = new Scanner(System.in);
 
-    protected void manageInventory() {
+    protected void managePeople() {
         try {
 
 
@@ -53,15 +53,47 @@ public class PeopleMenu {
 
     }
 
-    protected void manageVisitor() {
+    private void manageVisitor() {
 
     }
 
-    protected void manageEmployee() {
+    private void manageEmployee() {
+        System.out.println("You are in the employee menu." +
+                "\nWhat would you like to do:" +
+                "\n1.Create New Employee" +
+                "\n2. View All Employees" +
+                "\n3. Remove an Employee" +
+                "\n4. Edit an Employee" +
+                "\n5. Go back" +
+                "\n6. Exit Program");
+        try {
+            switch (input.nextInt()) {
+                case 1:
+                    //Create New Employees
+                    break;
+                case 2:
+                    //View all Employees
+                    break;
+                case 3:
+                    //Remove Employee
+                case 4:
+                    //Edit Employee
+                    break;
+                case 5:
+                    //Go Back
+                    manageEmployee();
+                    break;
+                case 6:
+                    //Exit Program
+                    System.exit(0);
+                    break;
+                default:
+                    //Handle if an incorrect number is put in
+                    System.out.println("That is not a valid entry. Please enter a number between 1 and 6.");
+            }
+        } catch (InputMismatchException ime) {
 
-    }
 
-    protected void managePeople() {
-
+        }
     }
 }
