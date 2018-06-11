@@ -53,15 +53,15 @@ public class PeopleMenu {
 
     }
 
-    private void manageVisitor() {
+    protected void manageVisitor() {
 
     }
 
-    private void manageEmployee() {
+    protected void manageEmployee() {
 
     }
 
-    private void managePeople() {
+    protected void managePeople() {
 
     }
 }
