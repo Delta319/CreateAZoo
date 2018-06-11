@@ -54,10 +54,53 @@ public class PeopleMenu {
     }
 
     private void manageVisitor() {
+        System.out.println("You are in the Visitor menu." +
+                "\nWhat would you like to do:" +
+                "\n1.Create New Visitor" +
+                "\n2. View All Visitor" +
+                "\n3. Remove an Visitor" +
+                "\n4. Edit an Visitor" +
+                "\n5. Go back" +
+                "\n6. Exit Program");
+        try {
+            switch (input.nextInt()) {
+                case 1:
+                    //Create New Visitor
+                    break;
+                case 2:
+                    //View all Visitors
+                    break;
+                case 3:
+                    //Remove Visitor
+                case 4:
+                    //Edit Visitor
+                    break;
+                case 5:
+                    //Go Back
+                    manageVisitor();
+                    break;
+                case 6:
+                    //Exit Program
+                    System.exit(0);
+                    break;
+                default:
+                    //Handle if an incorrect number is put in
+                    System.out.println("That is not a valid entry. Please enter a number between 1 and 6.");
+                    manageVisitor();
+                    break;
+            }
+        } catch (InputMismatchException ime) {
+
+
+        }
 
     }
 
+
+
+
     private void manageEmployee() {
+
         System.out.println("You are in the employee menu." +
                 "\nWhat would you like to do:" +
                 "\n1.Create New Employee" +
