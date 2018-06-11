@@ -61,7 +61,7 @@ public class PeopleMenu {
 
     }
 
-    protected void managePeople() {
+    private void managePeople() {
 
     }
 }
