@@ -1,10 +1,15 @@
 package com.company.people;
 
+import java.util.List;
+
 public class Employee extends People {
     private int employeeNumber;
     private String jobTitle;
     private String hireDate;
     private double hours;
+
+    private List<Employee> employeeList;
+
     public Employee(double age, String name, char gender, String race, int employeeNumber, String jobTitle, String hireDate) {
         super(age, name, gender, race);
         this.employeeNumber = employeeNumber;

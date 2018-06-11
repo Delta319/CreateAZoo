@@ -1,5 +1,7 @@
 package com.company.menu;
 
+import com.company.people.Employee;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -66,6 +68,7 @@ public class PeopleMenu {
             switch (input.nextInt()) {
                 case 1:
                     //Create New Visitor
+                    createPerson(2);
                     break;
                 case 2:
                     //View all Visitors
@@ -97,8 +100,6 @@ public class PeopleMenu {
     }
 
 
-
-
     private void manageEmployee() {
 
         System.out.println("You are in the employee menu." +
@@ -113,6 +114,7 @@ public class PeopleMenu {
             switch (input.nextInt()) {
                 case 1:
                     //Create New Employees
+                    createPerson();
                     break;
                 case 2:
                     //View all Employees
@@ -141,4 +143,32 @@ public class PeopleMenu {
 
         }
     }
+
+    private void createPerson(int location) {
+
+
+        //If location == 1, new Employee, if location == 2, new Visitor
+
+        if (location == 1) {
+
+            System.out.println("What is the employee's age?");
+            int employeeAge = input.nextInt();
+            input.nextLine();
+            System.out.println("What is the employee's name?");
+            String employeeName = input.nextLine();
+            System.out.println("What gender is the employee?");
+            char employeeGender = input.nextLine().charAt(0);
+            System.out.println("What is the employee's race?");
+            String employeeRace = input.nextLine();
+            System.out.println("What is the employee number?");
+            int employeeNumber = input.nextInt();
+            System.out.println("What is the employee's job title?");
+            String employeeJobTitle = input.nextLine();
+            System.out.println("What is the employee's hire date?");
+            String employeeHireDate = input.nextLine();
+
+            Employee newEmployee = new Employee(employeeAge, employeeName, employeeGender, employeeRace, employeeNumber, employeeJobTitle, employeeHireDate);
+        }
+    }
 }
+
