@@ -90,6 +90,8 @@ public class PeopleMenu {
                 default:
                     //Handle if an incorrect number is put in
                     System.out.println("That is not a valid entry. Please enter a number between 1 and 6.");
+                    manageEmployee();
+                    break;
             }
         } catch (InputMismatchException ime) {
 
