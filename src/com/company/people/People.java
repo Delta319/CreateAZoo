@@ -13,6 +13,9 @@ public class People {
         this.race = race;
     }
 
+    public People() {
+    }
+
     public double getAge() {
         return age;
     }
